@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/hp/StudioProjects/Game2048PlayMarket/app/src/main/res/drawable/background_share.xml" value="0.1865" />
+        <entry key="..\:/Users/hp/StudioProjects/Game2048PlayMarket/app/src/main/res/drawable/background_tab.xml" value="0.1605" />
+        <entry key="..\:/Users/hp/StudioProjects/Game2048PlayMarket/app/src/main/res/drawable/bg_item_0.xml" value="0.1605" />
+        <entry key="..\:/Users/hp/StudioProjects/Game2048PlayMarket/app/src/main/res/drawable/bg_item_16.xml" value="0.1605" />
+        <entry key="..\:/Users/hp/StudioProjects/Game2048PlayMarket/app/src/main/res/drawable/bg_item_2.xml" value="0.1605" />
+        <entry key="..\:/Users/hp/StudioProjects/Game2048PlayMarket/app/src/main/res/drawable/bg_item_4.xml" value="0.1605" />
+        <entry key="..\:/Users/hp/StudioProjects/Game2048PlayMarket/app/src/main/res/drawable/bg_item_8.xml" value="0.1605" />
+        <entry key="..\:/Users/hp/StudioProjects/Game2048PlayMarket/app/src/main/res/drawable/ic_reload.xml" value="0.1605" />
+        <entry key="..\:/Users/hp/StudioProjects/Game2048PlayMarket/app/src/main/res/drawable/rounded_corner.xml" value="0.1605" />
+        <entry key="..\:/Users/hp/StudioProjects/Game2048PlayMarket/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/hp/StudioProjects/Game2048PlayMarket/app/src/main/res/layout/activity_menu.xml" value="0.16" />
+        <entry key="..\:/Users/hp/StudioProjects/Game2048PlayMarket/app/src/main/res/layout/activity_splash_screen.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/hp/StudioProjects/Game2048PlayMarket/app/src/main/res/layout/menyu_chiqish.xml" value="0.184375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

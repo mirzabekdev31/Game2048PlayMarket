@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="2000dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bak3" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/backBTN"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:tint="@color/white"
+                tools:ignore="UseAppTint" />
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Info"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/GitaImg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="40dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9">
+        <ImageView
+            android:layout_height="80dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/gita"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/GitaImg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ushbu dastur Gita dasturchilar akademyasi talabasi Mirzabek Orziyev tomonidan ishlab chiqilgan"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_margin="10dp"
+        android:justificationMode="inter_word"
+        android:textColor="@color/white"
+        />
+    <TextView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact : @Mirzabek_Orziyev"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

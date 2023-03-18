@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".mvp.view.MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="2000dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bak3" />
+
+    <TextView
+        android:id="@+id/text2048"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="center|left"
+        android:text="2048"
+        android:textColor="#787267"
+        android:textSize="66sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="RtlHardcoded" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/SCORE"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_0"
+        app:layout_constraintBottom_toBottomOf="@id/text2048"
+        app:layout_constraintLeft_toRightOf="@id/text2048"
+        app:layout_constraintRight_toLeftOf="@id/bestScore"
+        app:layout_constraintTop_toTopOf="@id/text2048">
+
+        <TextView
+            android:id="@+id/scoreName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scoreName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bestScore"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_0"
+        app:layout_constraintBottom_toBottomOf="@id/SCORE"
+        app:layout_constraintLeft_toRightOf="@id/SCORE"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/SCORE">
+
+        <TextView
+            android:id="@+id/Best"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:id="@+id/BestScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Best" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonReload"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16sp"
+        android:background="@drawable/background_tab"
+        android:backgroundTint="#8F7A66"
+        android:text="Refresh"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/mainView"
+        app:layout_constraintRight_toRightOf="@id/bestScore" />
+
+    <LinearLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/background_tab"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/text2048">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+
+            <TextView
+                style="@style/PlayButton"
+                tools:text="0" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:src="@drawable/ic_back"
+        android:tint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseAppTint" />
+</androidx.constraintlayout.widget.ConstraintLayout>
